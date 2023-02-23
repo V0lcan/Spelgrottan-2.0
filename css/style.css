@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 200vh;
 }
 
 /* Navbar */
@@ -8,11 +9,20 @@ nav {
     margin: 0;
     padding: 0;
     height: 50px;
-    width: auto;
-    background-color: rgb(35, 35, 35);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav img {
     height: 40px;
     padding: 5px;
+}
+
+#navbar {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
 }
