@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     height: 200vh;
+    overflow-x: hidden;
+    font-size: 11px;
 }
 
 /* Navbar */
@@ -13,16 +15,51 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    display: inline;
 }
 
 nav img {
-    height: 40px;
-    padding: 5px;
+    height: 44px;
+    padding: 3px 0 3px 3px;
+    margin: 0 -5px 0 0;
 }
 
+nav img:nth-child(2) {
+    height: 30px;
+    padding: 10px 0 10px 0;
+    margin: 0 0 0 -5px;
+}
+
+/* Navbar fade effect */
 #navbar {
     width: 100vw;
     height: 50px;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(255, 255, 255);
     opacity: 0;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../img/headerbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header div img {
+    width: 50rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
 }
